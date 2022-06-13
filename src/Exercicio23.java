@@ -23,4 +23,5 @@ public class Exercicio23 {
 
         System.out.println("O valor do seu salario reajustado e: " + resultado);
     }
+
 }
