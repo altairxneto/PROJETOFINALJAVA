@@ -10,7 +10,6 @@ public class Exercicio7 {
 
         numeros = new int[quantidade];
 
-        int num;
         int resultado = 0;
 
         for (int contador = 0; contador < quantidade; contador++) {
@@ -18,11 +17,15 @@ public class Exercicio7 {
             numeros[contador] = s.nextInt();
         }
 
+        int fato, aux;
         for (int i = 0; i < quantidade; i++) {
-            for (int j = numeros[i]; j < 0; j--) {
-                resultado = numeros[i]*(j - 1);
+            aux = numeros[i];
+
+            for(fato = 1; aux>1; aux = aux - 1){
+                fato = fato*aux;
             }
-            System.out.println("O fatorial de " + numeros[i] + " e: " + resultado);
+
+            System.out.println("O fatorial de " + numeros[i] + " e: " + fato);
         }
     }
 }
